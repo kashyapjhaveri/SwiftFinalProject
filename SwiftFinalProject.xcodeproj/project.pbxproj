@@ -10,6 +10,7 @@
 		2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD523F315F500634BF9 /* EnumFuel.swift */; };
 		2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD723F3161F00634BF9 /* Vehicle.swift */; };
 		2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD923F31BAB00634BF9 /* IDisplay.swift */; };
+		2D811DDC23F324B900634BF9 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DDB23F324B900634BF9 /* Bus.swift */; };
 		9BCA55BA23F30783007FB151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55B923F30783007FB151 /* main.swift */; };
 		9BCA55C123F307EF007FB151 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55C023F307EF007FB151 /* Person.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		2D811DD523F315F500634BF9 /* EnumFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFuel.swift; sourceTree = "<group>"; };
 		2D811DD723F3161F00634BF9 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2D811DD923F31BAB00634BF9 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		2D811DDB23F324B900634BF9 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		9BCA55B623F30783007FB151 /* SwiftFinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCA55B923F30783007FB151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9BCA55C023F307EF007FB151 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				2D811DD523F315F500634BF9 /* EnumFuel.swift */,
 				2D811DD723F3161F00634BF9 /* Vehicle.swift */,
 				2D811DD923F31BAB00634BF9 /* IDisplay.swift */,
+				2D811DDB23F324B900634BF9 /* Bus.swift */,
 			);
 			path = SwiftFinalProject;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D811DDC23F324B900634BF9 /* Bus.swift in Sources */,
 				2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */,
 				9BCA55C123F307EF007FB151 /* Person.swift in Sources */,
 				2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */,
