@@ -10,7 +10,7 @@ import Foundation
 
 class Driver : Person
 {
-    var  drivingLicenceNumber : String = ""
+    var  drivingLicenceNumber : String
     var isHistoryCleared : Bool
     var salary : Double
     

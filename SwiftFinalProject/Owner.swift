@@ -10,24 +10,23 @@ import Foundation
 
 class Owner : Person
 {
-var companyTitle : String = ""
-var businessNumber : String = ""
-var website : String = ""
+var companyTitle : String
+var businessNumber : String
+var website : String
     
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , companyTitle: String , businessNumber : String , website : String )
     {
         self.companyTitle = companyTitle
         self.businessNumber = businessNumber
         self.website = website
-        super.init (id, firstname, lastname, gender, birthDate, age, mobileNumber, email, username, password )
-
-}
+        super.init (id, firstname, lastname, gender, birthDate, age, mobileNumber, email, username, password)
+    }
+    
     override  func Display()
     {
-     super.Display()
-    
+        super.Display()
         print("companyTitle         :          \(self.companyTitle)")
         print("businessNumber       :          \(self.businessNumber)")
         print("website              :          \(self.website)")
-}
+    }
 }
