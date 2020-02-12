@@ -17,6 +17,7 @@
 		428E930223F3B636002CACD0 /* EnumGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E930123F3B636002CACD0 /* EnumGender.swift */; };
 		428E930423F3C897002CACD0 /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E930323F3C897002CACD0 /* customer.swift */; };
 		428E930623F3CCA2002CACD0 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E930523F3CCA2002CACD0 /* Driver.swift */; };
+		428E930823F3D093002CACD0 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E930723F3D093002CACD0 /* Owner.swift */; };
 		9BCA55BA23F30783007FB151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55B923F30783007FB151 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		428E930123F3B636002CACD0 /* EnumGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumGender.swift; sourceTree = "<group>"; };
 		428E930323F3C897002CACD0 /* customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
 		428E930523F3CCA2002CACD0 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		428E930723F3D093002CACD0 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9BCA55B623F30783007FB151 /* SwiftFinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCA55B923F30783007FB151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 				428E930123F3B636002CACD0 /* EnumGender.swift */,
 				428E930323F3C897002CACD0 /* customer.swift */,
 				428E930523F3CCA2002CACD0 /* Driver.swift */,
+				428E930723F3D093002CACD0 /* Owner.swift */,
 			);
 			path = SwiftFinalProject;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				428E930623F3CCA2002CACD0 /* Driver.swift in Sources */,
+				428E930823F3D093002CACD0 /* Owner.swift in Sources */,
 				428E930223F3B636002CACD0 /* EnumGender.swift in Sources */,
 				428E930423F3C897002CACD0 /* customer.swift in Sources */,
 				2D811DDC23F324B900634BF9 /* Bus.swift in Sources */,
