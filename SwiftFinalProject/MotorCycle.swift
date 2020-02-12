@@ -18,7 +18,7 @@ class MotorCycle : Vehicle
     {
         self.maxTopSpeed = maxTopSpeed;
         self.mileage = mileage;
-        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, vehicleManufacturerName: vehicleManufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, insuranceProviderName: insuranceProviderName, noOfSeat: noOfSeat, fuelType: fuelType, baseRate: baseRate, ratePerKm: ratePerKm, vehicleType: vehicleType);
+        super.init(vehicleIdentificationNumber, vehicleDescription, vehicleManufacturerName, isSelfDrive,isInsured,  insuranceProviderName,  noOfSeat, fuelType, baseRate,  ratePerKm,  vehicleType);
     }
     
     override func Display() {
