@@ -24,7 +24,7 @@ class Person : IDisplay
 
     final  var key : UInt8 = 5
     
-    init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String )
+    init (_ id: String,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ age: Int,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
     {
            self.id = id
            self.firstname = firstname
