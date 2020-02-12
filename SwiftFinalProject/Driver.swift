@@ -14,22 +14,20 @@ class Driver : Person
     var isHistoryCleared : Bool
     var salary : Double
     
-    func Driver() {
-        
-    }
+    
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , drivingLicenceNumber : String ,isHistoryCleared : Bool , salary : Double )
     {
         self.drivingLicenceNumber = drivingLicenceNumber
         self.isHistoryCleared = isHistoryCleared
         self.salary = salary
         super.init(id , firstname, lastname, gender, birthDate, age, mobileNumber, email, username , password)
-}
-    override  func Display(){
-    super.Display()
+    }
     
-         print("drivingLicenceNumber        :     \(self.drivingLicenceNumber)")
-         print("isHistoryCleared            :     \(self.isHistoryCleared)")
-         print("salary                      :     \(self.salary)")
-        
-}
+    override  func Display()
+    {
+        super.Display()
+        print("drivingLicenceNumber        :     \(self.drivingLicenceNumber)")
+        print("isHistoryCleared            :     \(self.isHistoryCleared)")
+        print("salary                      :     \(self.salary)")
+    }
 }
