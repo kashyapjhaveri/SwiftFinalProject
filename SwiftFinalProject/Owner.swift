@@ -17,8 +17,16 @@ class Owner : Person
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , companyTitle: String , businessNumber : String , website : String )
     {
         super.init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , companyTitle: String ,businessNumber: String , website : String)
-        {
+        self.companyTitle = companyTitle
+        self.businessNumber = businessNumber
+        self.website = website
 
 }
+    override  func Display(){
+    super.Display()
+    
+                print("companyTitle : \(self.companyTitle)")
+        print("businessNumber : \(self.businessNumber)")
+        print("website: \(self.website)")
 }
 }
