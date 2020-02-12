@@ -11,14 +11,14 @@ import Foundation
 
 class MototrCycle : Vehicle
 {
-    var maxTopSpeed : Int
+    var maxTopSpeed : Int;
     var mileage : Float
     
      init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String, maxTopSpeed: Int, mileage: Float)
     {
-        super.init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String)
-        self.maxTopSpeed = maxTopSpeed
-        self.mileage = mileage
+        self.maxTopSpeed = maxTopSpeed;
+        self.mileage = mileage;
+        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, vehicleManufacturerName: vehicleManufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, insuranceProviderName: insuranceProviderName, noOfSeat: noOfSeat, fuelType: fuelType, baseRate: baseRate, ratePerKm: ratePerKm, vehicleType: vehicleType);
     }
     
     override func Display() {
