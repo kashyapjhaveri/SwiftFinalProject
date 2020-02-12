@@ -13,8 +13,9 @@
 		2D811DDC23F324B900634BF9 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DDB23F324B900634BF9 /* Bus.swift */; };
 		2D811DDE23F332B200634BF9 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DDD23F332B200634BF9 /* Car.swift */; };
 		2D811DE023F3344A00634BF9 /* MototrCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DDF23F3344A00634BF9 /* MototrCycle.swift */; };
+		428E930023F3B0FD002CACD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E92FF23F3B0FD002CACD0 /* Person.swift */; };
+		428E930223F3B636002CACD0 /* EnumGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E930123F3B636002CACD0 /* EnumGender.swift */; };
 		9BCA55BA23F30783007FB151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55B923F30783007FB151 /* main.swift */; };
-		9BCA55C123F307EF007FB151 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55C023F307EF007FB151 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,9 +37,10 @@
 		2D811DDB23F324B900634BF9 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		2D811DDD23F332B200634BF9 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2D811DDF23F3344A00634BF9 /* MototrCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MototrCycle.swift; sourceTree = "<group>"; };
+		428E92FF23F3B0FD002CACD0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		428E930123F3B636002CACD0 /* EnumGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumGender.swift; sourceTree = "<group>"; };
 		9BCA55B623F30783007FB151 /* SwiftFinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCA55B923F30783007FB151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		9BCA55C023F307EF007FB151 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				9BCA55B923F30783007FB151 /* main.swift */,
-				9BCA55C023F307EF007FB151 /* Person.swift */,
 				2D811DD523F315F500634BF9 /* EnumFuel.swift */,
 				2D811DD723F3161F00634BF9 /* Vehicle.swift */,
 				2D811DD923F31BAB00634BF9 /* IDisplay.swift */,
 				2D811DDB23F324B900634BF9 /* Bus.swift */,
 				2D811DDD23F332B200634BF9 /* Car.swift */,
 				2D811DDF23F3344A00634BF9 /* MototrCycle.swift */,
+				428E92FF23F3B0FD002CACD0 /* Person.swift */,
+				428E930123F3B636002CACD0 /* EnumGender.swift */,
 			);
 			path = SwiftFinalProject;
 			sourceTree = "<group>";
@@ -141,13 +144,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428E930223F3B636002CACD0 /* EnumGender.swift in Sources */,
 				2D811DDC23F324B900634BF9 /* Bus.swift in Sources */,
 				2D811DE023F3344A00634BF9 /* MototrCycle.swift in Sources */,
 				2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */,
-				9BCA55C123F307EF007FB151 /* Person.swift in Sources */,
 				2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */,
 				2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */,
 				2D811DDE23F332B200634BF9 /* Car.swift in Sources */,
+				428E930023F3B0FD002CACD0 /* Person.swift in Sources */,
 				9BCA55BA23F30783007FB151 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
