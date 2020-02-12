@@ -10,9 +10,9 @@ import Foundation
 
 class Owner : Person
 {
-    var companyTitle : String = ""
-    var businessNumber : String = ""
-    var website : String = ""
+var companyTitle : String = ""
+var businessNumber : String = ""
+var website : String = ""
     
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , companyTitle: String , businessNumber : String , website : String )
     {

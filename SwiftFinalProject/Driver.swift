@@ -18,7 +18,8 @@ class Driver : Person {
     }
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , drivingLicenceNumber : String ,isHistoryCleared : Bool , salary : Double )
     {
-        super.init (id: String , firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String )
+        super.init(id , firstname, lastname, gender, birthDate, age, mobileNumber, email, username , password)
+       
         self.drivingLicenceNumber = drivingLicenceNumber
         self.isHistoryCleared = isHistoryCleared
         self.salary = salary
