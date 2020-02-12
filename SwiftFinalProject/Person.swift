@@ -45,7 +45,16 @@ class Person : IDisplay
                self.password = password
             
         func Display() {
-            <#code#>
+            print (" id : \(self.id)")
+            print (" firstname: \(self.firstname)")
+            print (" lastname: \(self.lastname)")
+            print (" gender: \(self.gender)")
+            print (" birthDate: \(self.birthDate)")
+            print (" age: \(self.age)")
+            print (" mobileNumber: \(self.mobileNumber)")
+            print (" email : \(self.email)")
+            print (" username : \(self.username)")
+            print (" password: \(self.password)")
         }
 
         
