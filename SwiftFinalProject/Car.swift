@@ -16,9 +16,10 @@ class Car : Vehicle
     
      init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String, carType : String, colour : String)
     {
-        super.init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String)
+        
         self.carType = carType
         self.colour = colour
+        super.init(vehicleIdentificationNumber, vehicleDescription, vehicleManufacturerName, isSelfDrive, isInsured, insuranceProviderName, noOfSeat, fuelType, baseRate, ratePerKm, vehicleType)
     }
     override func Display() {
         super.Display()

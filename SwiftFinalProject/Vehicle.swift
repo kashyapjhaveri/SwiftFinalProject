@@ -23,7 +23,7 @@ var baseRate : Int
 var ratePerKm : Int
 var vehicleType : String
 
-init(vehicleIdentificationNumber:String,vehicleDescription:String,vehicleManufacturerName:String,isSelfDrive:Bool,isInsured:Bool,insuranceProviderName:String,noOfSeat:Int,fuelType:Fuel,baseRate:Int,ratePerKm:Int,vehicleType:String)
+init(_ vehicleIdentificationNumber:String,_ vehicleDescription:String,_ vehicleManufacturerName:String,_ isSelfDrive:Bool,_ isInsured:Bool,_ insuranceProviderName:String,_ noOfSeat:Int,_ fuelType:Fuel,_ baseRate:Int,_ ratePerKm:Int,_ vehicleType:String)
 {
     self.vehicleIdentificationNumber = vehicleIdentificationNumber
     self.vehicleDescription = vehicleDescription

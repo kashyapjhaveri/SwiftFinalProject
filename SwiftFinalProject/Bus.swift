@@ -14,12 +14,13 @@ class Bus : Vehicle
     var isAccessibilityAvailable : Bool
     var isWifiAvailable : Bool
     
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String, typeOfBus:String, isAccessibilityAvailable:Bool, isWifiAvailable:Bool)
+    init(_ vehicleIdentificationNumber: String,_ vehicleDescription: String, _ vehicleManufacturerName: String,_ isSelfDrive: Bool,_ isInsured: Bool, _ insuranceProviderName: String,_ noOfSeat: Int,_ fuelType: Fuel,_ baseRate: Int, _ ratePerKm: Int,_ vehicleType: String,_ typeOfBus:String, _ isAccessibilityAvailable:Bool,_ isWifiAvailable:Bool)
     {
-        super.init(vehicleIdentificationNumber:String,vehicleDescription:String,vehicleManufacturerName:String,isSelfDrive:Bool,isInsured:Bool,insuranceProviderName:String,noOfSeat:Int,fuelType:Fuel,baseRate:Int,ratePerKm:Int,vehicleType:String)
+        
         self.typeOfBus = typeOfBus
         self.isAccessibilityAvailable = isAccessibilityAvailable
         self.isWifiAvailable = isWifiAvailable
+        super.init(vehicleIdentificationNumber,vehicleDescription,vehicleManufacturerName,isSelfDrive,isInsured,insuranceProviderName,noOfSeat,fuelType,baseRate,ratePerKm,vehicleType)
     }
     override func Display() {
         super.Display()
