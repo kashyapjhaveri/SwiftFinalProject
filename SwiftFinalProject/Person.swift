@@ -11,6 +11,10 @@ import Foundation
 class Person : IDisplay
 
 {
+    func Display() {
+        <#code#>
+    }
+    
    
     
     var id : String = ""
