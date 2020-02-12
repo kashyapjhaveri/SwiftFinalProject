@@ -9,7 +9,7 @@
 import Foundation
 
 
-class MototrCycle : Vehicle
+class MotorCycle : Vehicle
 {
     var maxTopSpeed : Int;
     var mileage : Float
