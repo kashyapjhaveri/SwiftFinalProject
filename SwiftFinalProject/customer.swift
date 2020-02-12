@@ -26,8 +26,8 @@ class customer: Person
    {
         super.Display()
         
-                print("address  : \(self.address)")
-                print("city : \(self.city)")
+                print("address        :      \(self.address)")
+                print("city           :      \(self.city)")
     }
     }
 
