@@ -62,6 +62,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D24B7E323FF4DFB0025190F /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				2D811DDF23F3344A00634BF9 /* MotorCycle.swift */,
+				2D811DDD23F332B200634BF9 /* Car.swift */,
+				2D811DDB23F324B900634BF9 /* Bus.swift */,
+				2D811DD723F3161F00634BF9 /* Vehicle.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		2D24B7E423FF4E470025190F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				428E930123F3B636002CACD0 /* EnumGender.swift */,
+				2D811DD523F315F500634BF9 /* EnumFuel.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2D24B7E523FF4E8E0025190F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				428E930723F3D093002CACD0 /* Owner.swift */,
+				428E930523F3CCA2002CACD0 /* Driver.swift */,
+				428E930323F3C897002CACD0 /* customer.swift */,
+				428E92FF23F3B0FD002CACD0 /* Person.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		2D24B7E623FF4EA60025190F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B610C8E23FDF02E00B22B91 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9BCA55AD23F30783007FB151 = {
 			isa = PBXGroup;
 			children = (
@@ -81,19 +120,12 @@
 		9BCA55B823F30783007FB151 /* SwiftFinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				2D24B7E623FF4EA60025190F /* Extensions */,
+				2D24B7E523FF4E8E0025190F /* Person */,
+				2D24B7E423FF4E470025190F /* Enums */,
+				2D24B7E323FF4DFB0025190F /* Vehicle */,
 				9BCA55B923F30783007FB151 /* main.swift */,
-				2D811DD523F315F500634BF9 /* EnumFuel.swift */,
-				2D811DD723F3161F00634BF9 /* Vehicle.swift */,
 				2D811DD923F31BAB00634BF9 /* IDisplay.swift */,
-				2D811DDB23F324B900634BF9 /* Bus.swift */,
-				2D811DDD23F332B200634BF9 /* Car.swift */,
-				2D811DDF23F3344A00634BF9 /* MotorCycle.swift */,
-				428E92FF23F3B0FD002CACD0 /* Person.swift */,
-				428E930123F3B636002CACD0 /* EnumGender.swift */,
-				428E930323F3C897002CACD0 /* customer.swift */,
-				428E930523F3CCA2002CACD0 /* Driver.swift */,
-				428E930723F3D093002CACD0 /* Owner.swift */,
-				9B610C8E23FDF02E00B22B91 /* Date+Extension.swift */,
 			);
 			path = SwiftFinalProject;
 			sourceTree = "<group>";
