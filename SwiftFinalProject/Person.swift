@@ -24,14 +24,14 @@ class Person : IDisplay
 
     final  var key : UInt8 = 5
     
-    init (_ id: String,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ age: Int,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
+    init (_ id: String,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
     {
            self.id = id
            self.firstname = firstname
            self.lastname = lastname
            self.gender = gender
            self.birthDate = birthDate
-           self.age = age
+        self.age = birthDate.getAge()
            self.mobileNumber = mobileNumber
            self.email = email
            self.username = username
