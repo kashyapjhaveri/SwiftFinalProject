@@ -13,12 +13,12 @@ class customer: Person
    var address : String
    var city : String
     
-    init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String  , address : String , city : String )
+    init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String  , address : String , city : String )
     
     {
       self.address = address
     self.city = city
-    super.init (id , firstname, lastname, gender, birthDate, age, mobileNumber, email, username, password)
+    super.init (id , firstname, lastname, gender, birthDate, mobileNumber, email, username, password)
         
     }
     
