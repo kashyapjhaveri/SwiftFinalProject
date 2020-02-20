@@ -11,7 +11,7 @@ import Foundation
 class Person : IDisplay
 
 {
-    var id : String
+    var id : Int
     var firstname : String
     var lastname : String
     var gender : Gender
@@ -24,7 +24,7 @@ class Person : IDisplay
 
     final  var key : UInt8 = 5
     
-    init (_ id: String,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
+    init (_ id: Int,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
     {
            self.id = id
            self.firstname = firstname
