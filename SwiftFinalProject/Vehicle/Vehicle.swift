@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum RatePerKm : Double
+{
+    case CAR=7.0, MOTORCYCLE=5.0, BUS=11.0
+}
+
 class Vehicle : IDisplay
 {
     
