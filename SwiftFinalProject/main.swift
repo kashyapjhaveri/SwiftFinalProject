@@ -22,3 +22,10 @@ for b in BusesDT
     print(" \t ********Bus Details********")
 }
 
+var CarsDT = [String : Car]()
+for c in CarsDT
+{
+    c.value.Display()
+    print(" \t ********Car Details********")
+}
+
