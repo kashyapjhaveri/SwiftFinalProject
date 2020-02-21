@@ -19,13 +19,13 @@ class MotorCycle : Vehicle
     var insuranceProviderName       : String
     var noOfSeat                    : Int
     var fuelType                    : Fuel
-    var baseRate                    : Int
+    var baseRate                    : BaseRate
     var ratePerKm                   : RatePerKm
     var vehicleType                 : String
     var maxTopSpeed                 : Int
     var mileage                     : Float
     
-    init(vehicleIdentificationNumber:String,vehicleDescription:String,vehicleManufacturerName:String,isSelfDrive:Bool,isInsured:Bool,insuranceProviderName:String,noOfSeat:Int,fuelType:Fuel,baseRate:Int,ratePerKm:RatePerKm,vehicleType:String,maxTopSpeed:Int,mileage:Float)
+    init(vehicleIdentificationNumber:String,vehicleDescription:String,vehicleManufacturerName:String,isSelfDrive:Bool,isInsured:Bool,insuranceProviderName:String,noOfSeat:Int,fuelType:Fuel,baseRate:BaseRate,ratePerKm:RatePerKm,vehicleType:String,maxTopSpeed:Int,mileage:Float)
     {
         self.vehicleIdentificationNumber = vehicleIdentificationNumber
         self.vehicleDescription = vehicleDescription
@@ -34,7 +34,7 @@ class MotorCycle : Vehicle
         self.isInsured = isInsured
         self.insuranceProviderName = insuranceProviderName
         self.noOfSeat = noOfSeat
-        self.fuelType = Fuel
+        self.fuelType = fuelType
         self.baseRate = baseRate
         self.ratePerKm = ratePerKm
         self.vehicleType = vehicleType
@@ -49,7 +49,7 @@ class MotorCycle : Vehicle
         print("Vehicle Manufacturer Name     : \(self.vehicleManufacturerName)")
         print("InsuranceProviderName         : \(self.insuranceProviderName)")
         print("No Of Seat                    : \(self.noOfSeat)")
-        print("Fuel Type                     : \(self.Fuel)")
+        print("Fuel Type                     : \(self.fuelType)")
         print("Base Rate                     : \(self.baseRate)")
         print("Rate Per Km                   : \(self.ratePerKm)")
         print("Vehicle Type                  : \(self.vehicleType)")
