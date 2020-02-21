@@ -11,19 +11,52 @@ import Foundation
 
 class MotorCycle : Vehicle
 {
-    var maxTopSpeed : Int;
-    var mileage : Float
+    var vehicleIdentificationNumber : String
+    var vehicleDescription          : String
+    var vehicleManufacturerName     : String
+    var isSelfDrive                 : Bool
+    var isInsured                   : Bool
+    var insuranceProviderName       : String
+    var noOfSeat                    : Int
+    var fuelType                    : Fuel
+    var baseRate                    : Int
+    var ratePerKm                   : RatePerKm
+    var vehicleType                 : String
+    var maxTopSpeed                 : Int
+    var mileage                     : Float
     
-     init(vehicleIdentificationNumber: String, vehicleDescription: String, vehicleManufacturerName: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, noOfSeat: Int, fuelType: Fuel, baseRate: Int, ratePerKm: Int, vehicleType: String, maxTopSpeed: Int, mileage: Float)
+    init(vehicleIdentificationNumber:String,vehicleDescription:String,vehicleManufacturerName:String,isSelfDrive:Bool,isInsured:Bool,insuranceProviderName:String,noOfSeat:Int,fuelType:Fuel,baseRate:Int,ratePerKm:RatePerKm,vehicleType:String,maxTopSpeed:Int,mileage:Float)
     {
-        self.maxTopSpeed = maxTopSpeed;
-        self.mileage = mileage;
-        super.init(vehicleIdentificationNumber, vehicleDescription, vehicleManufacturerName, isSelfDrive,isInsured,  insuranceProviderName,  noOfSeat, fuelType, baseRate,  ratePerKm,  vehicleType);
+        self.vehicleIdentificationNumber = vehicleIdentificationNumber
+        self.vehicleDescription = vehicleDescription
+        self.vehicleManufacturerName = vehicleManufacturerName
+        self.isSelfDrive = isSelfDrive
+        self.isInsured = isInsured
+        self.insuranceProviderName = insuranceProviderName
+        self.noOfSeat = noOfSeat
+        self.fuelType = Fuel
+        self.baseRate = baseRate
+        self.ratePerKm = ratePerKm
+        self.vehicleType = vehicleType
+        self.maxTopSpeed = maxTopSpeed
+        self.mileage = mileage
     }
     
-    override func Display() {
-        super.Display()
-        print("MaxTopSpeed     : \(self.maxTopSpeed)")
-        print("Mileage         : \(self.mileage)")
+    func Display()
+    {
+        print("Vehicle Identification Number : \(self.vehicleIdentificationNumber)")
+        print("Vehicle Description           : \(self.vehicleDescription)")
+        print("Vehicle Manufacturer Name     : \(self.vehicleManufacturerName)")
+        print("InsuranceProviderName         : \(self.insuranceProviderName)")
+        print("No Of Seat                    : \(self.noOfSeat)")
+        print("Fuel Type                     : \(self.Fuel)")
+        print("Base Rate                     : \(self.baseRate)")
+        print("Rate Per Km                   : \(self.ratePerKm)")
+        print("Vehicle Type                  : \(self.vehicleType)")
+        print("Maximum Top Speed             : \(self.maxTopSpeed)")
+        print("Mileage of the Vehicle        : \(self.mileage)")
     }
 }
+   
+    
+
