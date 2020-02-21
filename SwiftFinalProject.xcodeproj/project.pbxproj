@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D24B7FF24004D310025190F /* float$+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B7FE24004D310025190F /* float$+extension.swift */; };
 		2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD523F315F500634BF9 /* EnumFuel.swift */; };
 		2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD723F3161F00634BF9 /* Vehicle.swift */; };
 		2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD923F31BAB00634BF9 /* IDisplay.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D24B7FE24004D310025190F /* float$+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float$+extension.swift"; sourceTree = "<group>"; };
 		2D811DD523F315F500634BF9 /* EnumFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFuel.swift; sourceTree = "<group>"; };
 		2D811DD723F3161F00634BF9 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2D811DD923F31BAB00634BF9 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9B610C8E23FDF02E00B22B91 /* Date+Extension.swift */,
+				2D24B7FE24004D310025190F /* float$+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				2D811DE023F3344A00634BF9 /* MotorCycle.swift in Sources */,
 				2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */,
 				2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */,
+				2D24B7FF24004D310025190F /* float$+extension.swift in Sources */,
 				2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */,
 				2D811DDE23F332B200634BF9 /* Car.swift in Sources */,
 				428E930023F3B0FD002CACD0 /* Person.swift in Sources */,

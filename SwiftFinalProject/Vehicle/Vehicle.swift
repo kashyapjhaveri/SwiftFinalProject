@@ -29,5 +29,6 @@ var ratePerKm : Int {get}
 var vehicleType : String {get set}
     
 func Display()
+//func DisplayAvailableVehicleToRent()
 }
 
