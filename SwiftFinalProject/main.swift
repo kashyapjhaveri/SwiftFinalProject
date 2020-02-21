@@ -15,8 +15,8 @@ print("Hello, World!")
 //
 //temp.Display();
 
-var BusDT = [String : Bus]()
-for b in BusDT
+var BusesDT = [String : Bus]()
+for b in BusesDT
 {
     b.value.Display()
     print(" \t ********Bus Details********")
