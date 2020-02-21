@@ -11,3 +11,14 @@ import Foundation
 print("Hello, World!")
 
 
+//var temp = Bus(vehicleIdentificationNumber: "gsrg", vehicleDescription: "hvbv", vehicleManufacturerName: "bbbs", isSelfDrive: true, isInsured: false, insuranceProviderName: "dvs", noOfSeat: 2, fuelType: Fuel.PETROL, baseRate: BaseRate.BUS, ratePerKm: RatePerKm.BUS, vehicleType: "Bua", typeOfBus: "Coch", isAccessibilityAvailable: true, isWifiAvailable: false);
+//
+//temp.Display();
+
+var BusDT = [String : Bus]()
+for b in BusDT
+{
+    b.value.Display()
+    print(" \t ********Bus Details********")
+}
+

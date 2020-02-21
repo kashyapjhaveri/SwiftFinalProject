@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D24B7FF24004D310025190F /* float$+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B7FE24004D310025190F /* float$+extension.swift */; };
+		2D24B7FF24004D310025190F /* float+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B7FE24004D310025190F /* float+extension.swift */; };
 		2D24B803240088A50025190F /* EnumRatePerKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B802240088A50025190F /* EnumRatePerKM.swift */; };
 		2D24B805240088CC0025190F /* EnumBaseRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B804240088CC0025190F /* EnumBaseRate.swift */; };
 		2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD523F315F500634BF9 /* EnumFuel.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D24B7FE24004D310025190F /* float$+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float$+extension.swift"; sourceTree = "<group>"; };
+		2D24B7FE24004D310025190F /* float+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float+extension.swift"; sourceTree = "<group>"; };
 		2D24B802240088A50025190F /* EnumRatePerKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumRatePerKM.swift; sourceTree = "<group>"; };
 		2D24B804240088CC0025190F /* EnumBaseRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBaseRate.swift; sourceTree = "<group>"; };
 		2D811DD523F315F500634BF9 /* EnumFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFuel.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9B610C8E23FDF02E00B22B91 /* Date+Extension.swift */,
-				2D24B7FE24004D310025190F /* float$+extension.swift */,
+				2D24B7FE24004D310025190F /* float+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */,
 				2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */,
 				2D24B805240088CC0025190F /* EnumBaseRate.swift in Sources */,
-				2D24B7FF24004D310025190F /* float$+extension.swift in Sources */,
+				2D24B7FF24004D310025190F /* float+extension.swift in Sources */,
 				2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */,
 				2D24B803240088A50025190F /* EnumRatePerKM.swift in Sources */,
 				2D811DDE23F332B200634BF9 /* Car.swift in Sources */,

@@ -8,14 +8,9 @@
 
 import Foundation
 
-enum RatePerKm : Double
-{
-    case CAR=5.0, MOTORCYCLE=1.0, BUS=7.0
-}
 
-enum BaseRate : Double{
-    case CAR=100,MOTORCYCLE=50,BUS=250
-}
+
+
 
 protocol Vehicle : IDisplay
 {
@@ -29,7 +24,7 @@ var insuranceProviderName : String {get set}
 var noOfSeat : Int {get set}
 var fuelType : Fuel {get set}
 var baseRate : BaseRate {get set}
-var ratePerKm : RatePerKm {get}
+var ratePerKm : RatePerKm {get set}
 var vehicleType : String {get set}
     
 func Display()
