@@ -8,7 +8,31 @@
 
 import Foundation
 extension Date{
-    func getAge() -> Int {
+    func getAge() -> Int
+    {
             return Calendar.current.dateComponents([.year], from: self).year!;
     }
+
+    public func getFormattedDate(dateFormat:String) -> String
+    {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = dateFormat
+        let formattedDate = dateFormatter.string(from: self)
+        return formattedDate
+    }
+    
+    static func from(year: Int, month: Int, day: Int) -> Date?
+    {
+        let calendar = Calendar(identifier: .gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        return calendar.date(from: dateComponents) ?? nil
+    }
 }
+
+
+
+
+
