@@ -9,7 +9,7 @@
 import Foundation
 extension Float
 {
-    func bill() -> String
+    func Bill() -> String
     {
         return "$\(self)"
     }
