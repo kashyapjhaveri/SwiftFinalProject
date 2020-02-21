@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2D24B7FF24004D310025190F /* float$+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B7FE24004D310025190F /* float$+extension.swift */; };
+		2D24B803240088A50025190F /* EnumRatePerKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B802240088A50025190F /* EnumRatePerKM.swift */; };
+		2D24B805240088CC0025190F /* EnumBaseRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24B804240088CC0025190F /* EnumBaseRate.swift */; };
 		2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD523F315F500634BF9 /* EnumFuel.swift */; };
 		2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD723F3161F00634BF9 /* Vehicle.swift */; };
 		2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811DD923F31BAB00634BF9 /* IDisplay.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		2D24B7FE24004D310025190F /* float$+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float$+extension.swift"; sourceTree = "<group>"; };
+		2D24B802240088A50025190F /* EnumRatePerKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumRatePerKM.swift; sourceTree = "<group>"; };
+		2D24B804240088CC0025190F /* EnumBaseRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBaseRate.swift; sourceTree = "<group>"; };
 		2D811DD523F315F500634BF9 /* EnumFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFuel.swift; sourceTree = "<group>"; };
 		2D811DD723F3161F00634BF9 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2D811DD923F31BAB00634BF9 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				428E930123F3B636002CACD0 /* EnumGender.swift */,
 				2D811DD523F315F500634BF9 /* EnumFuel.swift */,
+				2D24B802240088A50025190F /* EnumRatePerKM.swift */,
+				2D24B804240088CC0025190F /* EnumBaseRate.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 				2D811DE023F3344A00634BF9 /* MotorCycle.swift in Sources */,
 				2D811DD823F3161F00634BF9 /* Vehicle.swift in Sources */,
 				2D811DD623F315F500634BF9 /* EnumFuel.swift in Sources */,
+				2D24B805240088CC0025190F /* EnumBaseRate.swift in Sources */,
 				2D24B7FF24004D310025190F /* float$+extension.swift in Sources */,
 				2D811DDA23F31BAB00634BF9 /* IDisplay.swift in Sources */,
+				2D24B803240088A50025190F /* EnumRatePerKM.swift in Sources */,
 				2D811DDE23F332B200634BF9 /* Car.swift in Sources */,
 				428E930023F3B0FD002CACD0 /* Person.swift in Sources */,
 				9BCA55BA23F30783007FB151 /* main.swift in Sources */,
