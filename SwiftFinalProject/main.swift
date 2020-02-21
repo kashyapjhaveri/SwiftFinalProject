@@ -29,3 +29,9 @@ for c in CarsDT
     print(" \t ********Car Details********")
 }
 
+var MotorcyclesDT = [String : MotorCycle]()
+for m in MotorcyclesDT
+{
+    m.value.Display()
+    print(" \t *******MotorCycles Details********")
+}
