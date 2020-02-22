@@ -43,4 +43,9 @@ for x in ownerDT
     print("\t *********owner details *********")
 }
 
-
+var DriverDT = [String: Driver]()
+for y in DriverDT
+{
+    y.value.Display()
+    print("\t********Driver details**************")
+}
