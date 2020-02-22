@@ -36,6 +36,11 @@ for m in MotorcyclesDT
     print(" \t *******MotorCycles Details********")
 }
 
-
+var ownerDT = [String : Owner]()
+for x in ownerDT
+{
+    x.value.Display()
+    print("\t *********owner details *********")
+}
 
 
