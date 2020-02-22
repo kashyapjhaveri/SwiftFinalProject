@@ -9,48 +9,21 @@
 
 import Foundation
 
-class Person : IDisplay
+protocol Person : IDisplay
 
 {
-    var id : Int
-    var firstname : String
-    var lastname : String
-    var gender : Gender
-    var birthDate : Date
-    var age : Int
-    var mobileNumber : String
-    var email : String
-    var username : String
-    var password : String
+    var id           : Int {get set}
+    var firstname    : String{get set}
+    var lastname     : String{get set}
+    var gender       : Gender{get set}
+    var birthDate    : Date{get set}
+    var age          : Int{get }
+    var mobileNumber : String{get set}
+    var email        : String{get set}
+    var username     : String{get set}
+    var password     : String{get set}
 
-    final  var key : UInt8 = 5
-    
-    init (_ id: Int,_ firstname: String,_ lastname: String,_ gender: Gender,_ birthDate: Date,_ mobileNumber: String,_ email: String,_ username: String,_ password: String )
-    {
-           self.id = id
-           self.firstname = firstname
-           self.lastname = lastname
-           self.gender = gender
-           self.birthDate = birthDate
-           self.age = birthDate.getAge()
-           self.mobileNumber = mobileNumber
-           self.email = email
-           self.username = username
-           self.password = password //encrypt(originalPass: "")
-    }
-        
-    func Display() {
-        print (" id : \(self.id)")
-        print (" firstname: \(self.firstname)")
-        print (" lastname: \(self.lastname)")
-        print (" gender: \(self.gender)")
-        print (" birthDate: \(self.birthDate)")
-        print (" age: \(self.age)")
-        print (" mobileNumber: \(self.mobileNumber)")
-        print (" email : \(self.email)")
-        print (" username : \(self.username)")
-        print (" password: \(self.password)")
-    }
+    func Display()
 }
 
 
