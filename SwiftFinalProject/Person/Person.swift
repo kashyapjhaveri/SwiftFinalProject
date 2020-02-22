@@ -23,6 +23,9 @@ protocol Person : IDisplay
     var username     : String{get set}
     var password     : String{get set}
 
+ //encrypt(originalPass: "")
+    
+        
     func Display()
 }
 
