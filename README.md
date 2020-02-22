@@ -3,11 +3,11 @@ Semester 1 Swift Language Final Project
 
 TEAM MEMBERS :
 
-1.KASHYAP JHAVERI   - C0775049
+1.KASHYAP JHAVERI     - C0775049
 
-2.SRIKANTH MARELLA  - C0771612
+2.SRIKANTH MARELLA    - C0771612
 
-3.GAGANDEEP KAUR.   -
+3.GAGANDEEP KAUR.     -
 
 
 
@@ -16,5 +16,6 @@ TEAM MEMBERS :
 REFERENCES :
 
 1.https://stackoverflow.com/questions/35700281/date-format-in-swift
+
 
 2.
