@@ -8,7 +8,7 @@
 
 import Foundation
 
-class customer: Person
+class Customer: Person
 {
     var id           : Int
     var firstname    : String
@@ -32,7 +32,7 @@ class customer: Person
 //            self.password = encrypt(originalPass: newValue)
 //        }
 //    }
-    
+        
     init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String  , address : String , city : String )
     
     {
