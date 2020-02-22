@@ -30,6 +30,13 @@ extension Date{
         dateComponents.day = day
         return calendar.date(from: dateComponents) ?? nil
     }
+
+    static func from(date:String) -> Date?
+    {
+        let tempDateFormatter = DateFormatter();
+        tempDateFormatter.dateFormat = "dd/MM/yyyy";
+        return tempDateFormatter.date(from: date);
+    }
 }
 
 
