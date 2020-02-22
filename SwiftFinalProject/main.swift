@@ -49,3 +49,9 @@ for y in DriverDT
     y.value.Display()
     print("\t********Driver details**************")
 }
+var CustomerDT = [String: customer]()
+for z in CustomerDT
+{
+    z.value.Display()
+    print("\t**********Customer details**********")
+}
