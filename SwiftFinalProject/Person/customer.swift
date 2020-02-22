@@ -13,6 +13,16 @@ class customer: Person
    var address : String
    var city : String
     
+//    var password: String{
+//        get{
+//            
+//        }
+//        set
+//        {
+//            self.password = encrypt(originalPass: newValue)
+//        }
+//    }
+    
     init (id: String, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String  , address : String , city : String )
     
     {

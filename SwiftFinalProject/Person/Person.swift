@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kashyap Jhaveri. All rights reserved.
 //
 
+
 import Foundation
 
 class Person : IDisplay
@@ -31,11 +32,11 @@ class Person : IDisplay
            self.lastname = lastname
            self.gender = gender
            self.birthDate = birthDate
-        self.age = birthDate.getAge()
+           self.age = birthDate.getAge()
            self.mobileNumber = mobileNumber
            self.email = email
            self.username = username
-           self.password = password
+           self.password = password //encrypt(originalPass: "")
     }
         
     func Display() {
@@ -51,4 +52,20 @@ class Person : IDisplay
         print (" password: \(self.password)")
     }
 }
+
+
+//extension Person
+//{
+//    func encryptpass(originalPass : String) -> String
+//    {
+//        let op  = "originalpass"
+//        let characters = Array(op)
+//        for char  in characters
+//        {
+//            char.asciiValue += 5;
+//
+//        }
+//
+//    }
+//}
 
