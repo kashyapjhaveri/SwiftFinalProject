@@ -25,12 +25,11 @@ func readCustomersToDictonary()  {
     let readFileInstance = ReadFile.getInsatnce();
     
     do {
-        let json = try readFileInstance.readFileToJSON(fileName: "Customers", ext: "json")
+        let json = try readFileInstance.readJSONFile(fileName: "Customers")
 
         if let customers = json as? [Any]{
             
             for customer in customers {
-                
                 var tempGender:Gender;
                 let cust = customer as! [String:Any];
                 
