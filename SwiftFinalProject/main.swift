@@ -8,11 +8,6 @@
 
 import Foundation
 
-
-//var temp = Bus(vehicleIdentificationNumber: "gsrg", vehicleDescription: "hvbv", vehicleManufacturerName: "bbbs", isSelfDrive: true, isInsured: false, insuranceProviderName: "dvs", noOfSeat: 2, fuelType: Fuel.PETROL, baseRate: BaseRate.BUS, ratePerKm: RatePerKm.BUS, vehicleType: "Bua", typeOfBus: "Coch", isAccessibilityAvailable: true, isWifiAvailable: false);
-//
-//temp.Display();
-
 //var BusesDT = [Int : Bus]()
 //var CarsDT = [Int : Car]()
 //var MotorcyclesDT = [Int : MotorCycle]()
@@ -66,9 +61,56 @@ func readCustomersToDictonary()  {
     }
 }
 
+func readOwnersToDictonary()  {
+    let readFileInstance = ReadFile.getInsatnce();
+    
+    do {
+        let json = try readFileInstance.readJSONFile(fileName: "Owners")
+
+        if let owners = json as? [Any]{
+            
+            for owner in owners {
+                var tempGender:Gender;
+                let own = owner as! [String:Any];
+                
+                if own["gender"] as! String == "Male"{
+                    tempGender = Gender.Male;
+                }
+                else if own["gender"] as! String == "Female"
+                {
+                    tempGender = Gender.Female;
+                }
+                else{
+                    tempGender = Gender.Others;
+                }
+                
+                let tempDate = Date.from(date: own["birthDate"] as! String)
+                
+                let tempObj = Owner(id: own["id"] as! Int, firstname: own["firstName"] as! String, lastname: own["lastName"] as! String, gender: tempGender, birthDate: tempDate!,mobileNumber: own["mobileNumber"] as! String, email: own["email"] as! String, username: own["userName"] as! String, password: own["password"] as! String, companyTitle: own["companyTitle"] as! String, businessNumber: own["businessLandlineNumber"] as! String, website: own["website"] as! String);
+                
+                ownersDT.updateValue(tempObj, forKey: own["id"] as! Int)
+            }
+        }
+    }
+    catch FileExceptions.fileNotFound{
+        print("File not found")
+    }
+    catch FileExceptions.dataReadingError {
+        print("Error while reading data from file");
+    }
+    catch FileExceptions.errorPasingToJSON{
+        print("Error while parsing data to json")
+    }
+    catch {
+        print("Invalid Error")
+    }
+}
+
 func initAllValues() {
-  readCustomersToDictonary()
+    readCustomersToDictonary();
+    readOwnersToDictonary();
 }
 
 initAllValues()
 
+//print(ownersDT[1]?.Display())
