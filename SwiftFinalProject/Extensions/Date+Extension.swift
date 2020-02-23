@@ -10,7 +10,7 @@ import Foundation
 extension Date{
     func getAge() -> Int
     {
-            return Calendar.current.dateComponents([.year], from: self).year!;
+        return Calendar.current.dateComponents([.year], from: self, to: Date()).year!;
     }
 
     public func getFormattedDate(dateFormat:String) -> String
