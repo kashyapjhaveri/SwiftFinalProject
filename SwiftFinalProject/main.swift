@@ -12,7 +12,7 @@ import Foundation
 //var CarsDT = [Int : Car]()
 //var MotorcyclesDT = [Int : MotorCycle]()
 var ownersDT = [Int : Owner]()
-//var DriversDT = [Int: Driver]()
+var DriversDT = [Int: Driver]()
 var CustomersDT = [Int: Customer]()
 
 
@@ -106,11 +106,58 @@ func readOwnersToDictonary()  {
     }
 }
 
+func readDriverssToDictonary()  {
+    let readFileInstance = ReadFile.getInsatnce();
+    
+    do {
+        let json = try readFileInstance.readJSONFile(fileName: "Drivers")
+
+        if let drivers = json as? [Any]{
+            
+            for driver in drivers {
+                var tempGender:Gender;
+                let dri = driver as! [String:Any];
+                
+                if dri["gender"] as! String == "Male"{
+                    tempGender = Gender.Male;
+                }
+                else if dri["gender"] as! String == "Female"
+                {
+                    tempGender = Gender.Female;
+                }
+                else{
+                    tempGender = Gender.Others;
+                }
+                
+                let tempDate = Date.from(date: dri["birthDate"] as! String)
+                
+               let tempObj = Driver(id: dri["id"] as! Int, firstname: dri["firstName"] as! String, lastname: dri["lastName"] as! String, gender: tempGender, birthDate: tempDate!,mobileNumber: dri["mobileNumber"] as! String, email: dri["email"] as! String, username: dri["userName"] as! String, password: dri["password"] as! String, drivingLicenceNumber: dri["drivingLicenceNumber"] as! String, isHistoryCleared: dri["isHistoryCleared"] as! Bool, salary: dri["salary"] as! Double
+                );
+                
+                DriversDT.updateValue(tempObj, forKey: dri["id"] as! Int);
+            }
+        }
+    }
+    catch FileExceptions.fileNotFound{
+        print("File not found")
+    }
+    catch FileExceptions.dataReadingError {
+        print("Error while reading data from file");
+    }
+    catch FileExceptions.errorPasingToJSON{
+        print("Error while parsing data to json")
+    }
+    catch {
+        print("Invalid Error")
+    }
+}
+
 func initAllValues() {
     readCustomersToDictonary();
     readOwnersToDictonary();
+    readDriverssToDictonary();
 }
 
 initAllValues()
 
-//print(ownersDT[1]?.Display())
+//print(DriversDT[1]?.Display())
