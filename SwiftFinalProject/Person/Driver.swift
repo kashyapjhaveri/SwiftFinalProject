@@ -58,6 +58,6 @@ class Driver : Person
         print("Password                   : \(self.password.decryptPassword())")
         print("drivingLicenceNumber       : \(self.drivingLicenceNumber)")
         print("isHistoryCleared           : \(self.isHistoryCleared)")
-        print("salary                     : \(self.salary)")
+        print("salary                     : \(self.salary.formattedCurrency())")
     }
 }
