@@ -22,26 +22,6 @@ protocol Person : IDisplay
     var email        : String{get set}
     var username     : String{get set}
     var password     : String{get set}
-
- //encrypt(originalPass: "")
-    
         
     func Display()
 }
-
-
-//extension Person
-//{
-//    func encryptpass(originalPass : String) -> String
-//    {
-//        let op  = "originalpass"
-//        let characters = Array(op)
-//        for char  in characters
-//        {
-//            char.asciiValue += 5;
-//
-//        }
-//
-//    }
-//}
-

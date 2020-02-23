@@ -23,18 +23,8 @@ class Customer: Person
     var address      : String
     var city         : String
     
-//    var password: String{
-//        get{
-//            
-//        }
-//        set
-//        {
-//            self.password = encrypt(originalPass: newValue)
-//        }
-//    }
         
     init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String  , address : String , city : String )
-    
     {
         self.id           = id
         self.firstname    = firstname
@@ -45,29 +35,29 @@ class Customer: Person
         self.mobileNumber = mobileNumber
         self.email        = email
         self.username     = username
-        self.password     = password
         self.address      = address
         self.city         = city
-        
+        self.password     = password.encryptPassword();
     }
+    
     
      func Display()
-   {
-    
-        print (" id          : \(self.id)")
-        print (" firstname   : \(self.firstname)")
-        print (" lastname    : \(self.lastname)")
-        print (" gender      : \(self.gender)")
-        print (" birthDate   : \(self.birthDate)")
-        print (" age         : \(self.age)")
-        print (" mobileNumber: \(self.mobileNumber)")
-        print (" email       : \(self.email)")
-        print (" username    : \(self.username)")
-        print (" password    : \(self.password)")
-        print ("address      : \(self.address)")
-        print ("city         : \(self.city)")
+     {
+        print ("ID                  : \(self.id)")
+        print ("Firstname           : \(self.firstname)")
+        print ("Lastname            : \(self.lastname)")
+        print ("Gender              : \(self.gender)")
+        print ("BirthDate           : \(self.birthDate)")
+        print ("Age                 : \(self.age)")
+        print ("MobileNumber        : \(self.mobileNumber)")
+        print ("Email               : \(self.email)")
+        print ("Username            : \(self.username)")
+        print ("Password(encrypted) : \(self.password)")
+        print ("Password            : \(self.password.decryptPassword())")
+        print ("Address             : \(self.address)")
+        print ("City                : \(self.city)")
     }
-    }
+}
 
 
 
