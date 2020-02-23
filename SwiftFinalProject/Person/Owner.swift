@@ -24,7 +24,9 @@ class Owner : Person
     var businessNumber        : String
     var website               : String
     
-    init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , companyTitle: String , businessNumber : String , website : String )
+    lazy var listOfVehicleOwned = [Int:Vehicle]();
+    
+    init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String , companyTitle: String , businessNumber : String , website : String )
     {
         self.id             = id
         self.firstname      = firstname
@@ -35,7 +37,7 @@ class Owner : Person
         self.mobileNumber   = mobileNumber
         self.email          = email
         self.username       = username
-        self.password       = password
+        self.password       = password.encryptPassword()
         self.companyTitle   = companyTitle
         self.businessNumber = businessNumber
         self.website        = website
@@ -44,18 +46,19 @@ class Owner : Person
     
     func Display()
     {
-        print (" id                 : \(self.id)")
-        print (" firstname          : \(self.firstname)")
-        print (" lastname           : \(self.lastname)")
-        print (" gender             : \(self.gender)")
-        print (" birthDate          : \(self.birthDate)")
-        print (" age                : \(self.age)")
-        print (" mobileNumber       : \(self.mobileNumber)")
-        print (" email              : \(self.email)")
-        print (" username           : \(self.username)")
-        print (" password           : \(self.password)")
-        print("companyTitle         : \(self.companyTitle)")
-        print("businessNumber       : \(self.businessNumber)")
-        print("website              : \(self.website)")
+        print("ID                 : \(self.id)")
+        print("Firstname          : \(self.firstname)")
+        print("Lastname           : \(self.lastname)")
+        print("Gender             : \(self.gender)")
+        print("BirthDate          : \(self.birthDate.getFormattedDate(dateFormat: "dd-MMM-yyyy"))")
+        print("Age                : \(self.age) Years")
+        print("MobileNumber       : \(self.mobileNumber)")
+        print("Email              : \(self.email)")
+        print("Username           : \(self.username)")
+        print("Password           : \(self.password.decryptPassword())")
+        print("Password           : \(self.password.decryptPassword())")
+        print("CompanyTitle       : \(self.companyTitle)")
+        print("BusinessNumber     : \(self.businessNumber)")
+        print("Website            : \(self.website)")
     }
 }
