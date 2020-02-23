@@ -20,12 +20,12 @@ class Driver : Person
     var email                 : String
     var username              : String
     var password              : String
-    var  drivingLicenceNumber : String
+    var drivingLicenceNumber  : String
     var isHistoryCleared      : Bool
     var salary                : Double
     
     
-    init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, age: Int, mobileNumber: String, email: String, username: String, password: String , drivingLicenceNumber : String ,isHistoryCleared : Bool , salary : Double )
+    init (id: Int, firstname: String, lastname: String, gender: Gender, birthDate: Date, mobileNumber: String, email: String, username: String, password: String , drivingLicenceNumber : String ,isHistoryCleared : Bool , salary : Double )
     {
         self.id                   = id
         self.firstname            = firstname
@@ -36,27 +36,28 @@ class Driver : Person
         self.mobileNumber         = mobileNumber
         self.email                = email
         self.username             = username
-        self.password             = password
+        self.password             = password.encryptPassword()
         self.drivingLicenceNumber = drivingLicenceNumber
         self.isHistoryCleared     = isHistoryCleared
         self.salary               = salary
         
     }
     
-     func Display()
+    func Display()
     {
-        print (" id                        : \(self.id)")
-        print (" firstname                 : \(self.firstname)")
-        print (" lastname                  : \(self.lastname)")
-        print (" gender                    : \(self.gender)")
-        print (" birthDate                 : \(self.birthDate)")
-        print (" age                       : \(self.age)")
-        print (" mobileNumber              : \(self.mobileNumber)")
-        print (" email                     : \(self.email)")
-        print (" username                  : \(self.username)")
-        print (" password                  : \(self.password)")
-        print("drivingLicenceNumber        : \(self.drivingLicenceNumber)")
-        print("isHistoryCleared            : \(self.isHistoryCleared)")
-        print("salary                      : \(self.salary)")
+        print("ID                         : \(self.id)")
+        print("Firstname                  : \(self.firstname)")
+        print("Lastname                   : \(self.lastname)")
+        print("Gender                     : \(self.gender)")
+        print("BirthDate                  : \(self.birthDate.getFormattedDate(dateFormat: "dd-MMM-yyyy"))")
+        print("Age                        : \(self.age) Years")
+        print("MobileNumber               : \(self.mobileNumber)")
+        print("Email                      : \(self.email)")
+        print("Username                   : \(self.username)")
+        print("Password(encrypted)        : \(self.password)")
+        print("Password                   : \(self.password.decryptPassword())")
+        print("drivingLicenceNumber       : \(self.drivingLicenceNumber)")
+        print("isHistoryCleared           : \(self.isHistoryCleared)")
+        print("salary                     : \(self.salary)")
     }
 }
