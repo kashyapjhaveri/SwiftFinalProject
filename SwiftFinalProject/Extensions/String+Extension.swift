@@ -16,7 +16,7 @@ extension String{
         {
             var ascii = char.asciiValue!;
             ascii+=5;
-            encryptString.append(Character(UnicodeScalar(ascii)))
+            encryptString.append(Character(UnicodeScalar(ascii))) //https://www.dotnetperls.com/convert-int-character-swift
         }
         return encryptString;
     }
