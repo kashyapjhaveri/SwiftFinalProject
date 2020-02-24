@@ -7,7 +7,7 @@ TEAM MEMBERS :
 
 2.SRIKANTH MARELLA    - C0771612
 
-3.GAGANDEEP KAUR.     -
+3.GAGANDEEP KAUR.     - C0768688
 
 
 
@@ -19,3 +19,8 @@ REFERENCES :
 
 
 2.https://mockaroo.com/
+
+
+3.https://www.dotnetperls.com/convert-int-character-swift
+
+4.
