@@ -9,5 +9,5 @@
 import Foundation
 
 enum Fuel {
-    case PETROL, DIESEL
+    case PETROL, DIESEL, ELETRIC
 }
