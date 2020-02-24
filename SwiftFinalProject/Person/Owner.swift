@@ -55,7 +55,7 @@ class Owner : Person
         print("MobileNumber       : \(self.mobileNumber)")
         print("Email              : \(self.email)")
         print("Username           : \(self.username)")
-        print("Password           : \(self.password.decryptPassword())")
+        print("Password(encrypted): \(self.password)")
         print("Password           : \(self.password.decryptPassword())")
         print("CompanyTitle       : \(self.companyTitle)")
         print("BusinessNumber     : \(self.businessNumber)")
