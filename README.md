@@ -1,7 +1,7 @@
 # Swift Final Project
 Semester 1 Swift Language Final Project
 
-TEAM MEMBERS :
+TEAM MEMBERS (Group #2) :
 
 1.KASHYAP JHAVERI     - C0775049
 
